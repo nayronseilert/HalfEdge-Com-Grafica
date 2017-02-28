@@ -13,14 +13,21 @@ import javax.swing.SwingUtilities;
 /**
  *
  * @author nayron
+ * Arquivo entrada e entrada-cubo possui dados como f1 e1_2
+f2 e1_3
+f3 e4_3
+f4 e6_4
+f5 e6_5
+v1 2......., onde f segnifica face, v = vertice e e = edge(aresta) 
  */
+
 public class Main {
 
     //Essa função e responsavel por criar o GUI
     private static void CriarTela() throws IOException {
          JFrame frame = new JFrame("Half Edge");
         
-        int x1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha uma opção HalfEdge\n 1-Triangulo\n 2-cubo", "X1", JOptionPane.QUESTION_MESSAGE));
+        int x1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha uma opção HalfEdge\n 1-Estrutura(1)\n 2-Estrutura(2)", "X1", JOptionPane.QUESTION_MESSAGE));
         if (x1 == 1) {
             //ler aquivo triangulo
             ArquivoHalfEdges A = new ArquivoHalfEdges("entrada.txt");//ler o arquivo TXT contendo um half-edge

@@ -16,10 +16,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-//import HalfEdge.nucleo.Face;
-//import HalfEdge.nucleo.ArquivoHalfEdges;
-//import HalfEdge.nucleo.HalfEdge;
-//import HalfEdge.nucleo.Vertice;
 
 @SuppressWarnings("serial")
 public class Principal_HalfEdge extends JPanel {
